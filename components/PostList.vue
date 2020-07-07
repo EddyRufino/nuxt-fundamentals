@@ -1,5 +1,5 @@
 <template>
-	<nuxt-link :to="`posts/${post.id}`">{{ post.title }}</nuxt-link>
+	<nuxt-link :to="{ name: 'posts-id', params: {id: post.id} }">{{ post.title }}</nuxt-link>
 </template>
 
 <script>
